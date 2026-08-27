@@ -52,7 +52,7 @@ export const products = [
     // category: "CARDIO EQUIPMENT",
     category: "Orbitrack",
     image: Product1,
-    gallery: [Product1, Product2],
+    gallery: [Product1],
     shortNote: "Compact cardio machine with adjustable resistance.",
     description:
       "CW 2050 is a versatile complete-body fitness machine designed for pedaling, running and cycling movements. It combines multiple workout movements in one compact machine and includes belt resistance with adjustable seating and handles.",
@@ -812,7 +812,7 @@ export const products = [
     // category: "TREADMILLS",
     category: "DC Series",
     image: Product28,
-    gallery: [[Product28]],
+    gallery: [Product28],
     shortNote: "4.5 HP BLDC treadmill with Bluetooth and incline.",
     description:
       "CW 712 is a DC-series treadmill equipped with a 4.5 HP BLDC motor. It offers speeds from 1–16 km/h, an 18 × 54 belt and a 3-level manual incline. The display system includes Bluetooth music and handrail buttons.",
