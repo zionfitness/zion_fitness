@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import AboutCTA from "../about-us/Components/AboutCTA";
 import { cloudinary } from "@/assets/Cloudinary";
@@ -10,7 +10,7 @@ import ProjectsShowcase from "./Components/ProductsShowcase";
 
 const ShowroomImg = cloudinary.about.hero;
 
-const Equipment = () => {
+const EquipmentContent = () => {
   const searchParams = useSearchParams();
 
 const [search, setSearch] = useState("");
@@ -56,4 +56,9 @@ const [category, setCategory] = useState(
   );
 };
 
+const Equipment = () => (
+  <Suspense fallback={null}>
+    <EquipmentContent />
+  </Suspense>
+);
 export default Equipment;
