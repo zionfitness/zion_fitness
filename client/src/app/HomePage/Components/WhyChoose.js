@@ -70,7 +70,7 @@ const WhyChoose = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center max-w-4xl mx-auto mb-14"
         >
-          <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-3">
+          <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-3">
             Why Choose Zion Fitness
           </p>
           <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight">
@@ -97,7 +97,7 @@ const WhyChoose = () => {
               <h3 className="text-sm sm:text-base font-bold text-[#1A1A1A] mb-2 leading-snug">
                 {title}
               </h3>
-              <p className="text-xs sm:text-sm font-regular text-[#6B7280] leading-relaxed">
+              <p className="text-sm font-regular text-[#6B7280] leading-relaxed">
                 {desc}
               </p>
             </motion.div>

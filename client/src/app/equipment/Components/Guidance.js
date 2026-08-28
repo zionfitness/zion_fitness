@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "motion/react";
 import { cloudinary } from "@/assets/Cloudinary";
 const Img = cloudinary.productsPage.guidance;
@@ -40,7 +41,7 @@ const Guidance = () => {
                 Personal Consultations
               </p>
 
-              <p className="mt-0.5 text-[11px] sm:text-xs lg:text-sm text-[#554336]">
+              <p className="mt-0.5 text-[11px] text-sm text-[#554336]">
                 Monday – Saturday: 9.00am – 6.00pm
               </p>
             </div>
@@ -58,7 +59,7 @@ const Guidance = () => {
           >
             <motion.p
               variants={fadeUp}
-              className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] text-[#914D00] mb-3"
+              className="text-sm font-semibold uppercase tracking-[0.15em] text-[#914D00] mb-3"
             >
               EXPERT GUIDANCE
             </motion.p>
@@ -71,7 +72,7 @@ const Guidance = () => {
             </motion.h2>
             <motion.p
               variants={fadeUp}
-              className="text-[#554336] text-xs leading-relaxed mb-8 max-w-xl"
+              className="text-[#554336] text-sm leading-relaxed mb-8 max-w-xl"
             >
               Choosing the right fitness equipment depends on your workout
               goals, available space, usage and preferred training style. Our
@@ -79,23 +80,22 @@ const Guidance = () => {
               suited to your home, training space or commercial fitness setup.
             </motion.p>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
-              <motion.a
-                variants={fadeUp}
+            <motion.div 
+                variants={fadeUp} className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+              <Link
                 href="/contact-us"
                 className="inline-flex items-center justify-center gap-2 bg-[#914D00]/80 hover:bg-[#914D00] text-white text-sm font-medium rounded uppercase tracking-wide px-5 sm:px-6 py-3 sm:py-3.5 transition-colors duration-200 w-full sm:w-auto"
               >
                 VISIT SHOWROOM
-              </motion.a>
+              </Link>
 
-              <motion.a
-                variants={fadeUp}
+              <Link
                 href="/contact-us"
                 className="inline-flex items-center justify-center gap-2 border border-[#1B1B1C] text-[#1B1B1C] text-sm font-medium rounded uppercase tracking-wide px-5 sm:px-6 py-3 sm:py-3.5 transition-colors duration-200 w-full sm:w-auto"
               >
                 CONTACT EXPERT
-              </motion.a>
-            </div>
+              </Link>
+            </motion.div>
           </motion.div>
         </div>
       </div>

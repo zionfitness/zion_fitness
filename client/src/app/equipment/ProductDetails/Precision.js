@@ -55,7 +55,7 @@ const Precision = () => {
           >
             <motion.p
               variants={fadeUp}
-              className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] text-[#914D00] mb-4"
+              className="text-sm font-semibold uppercase tracking-[0.15em] text-[#914D00] mb-4"
             >
               PERFORMANCE
             </motion.p>

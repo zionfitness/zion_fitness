@@ -94,7 +94,7 @@ const Visit = ({
             )}
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6 sm:p-8">
-              <p className="text-xs font-regular uppercase tracking-[0.15em] text-[#E5E2E1CC] mb-2">
+              <p className="text-sm font-regular uppercase tracking-[0.15em] text-[#E5E2E1CC] mb-2">
                 {eyebrow}
               </p>
               <h3 className="text-2xl sm:text-3xl font-bold text-white leading-tight">
@@ -121,7 +121,7 @@ const Visit = ({
             <motion.div variants={fadeUp} className="flex gap-3 mb-6">
               <MapPin className="text-[#F28C28] shrink-0 mt-0.5" size={18} />
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-1.5">
+                <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-1.5">
                   Address
                 </p>
                 {addressLines.map((line) => (
@@ -138,7 +138,7 @@ const Visit = ({
             <motion.div variants={fadeUp} className="flex gap-3 mb-9">
               <Clock className="text-[#F28C28] shrink-0 mt-0.5" size={18} />
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-1.5">
+                <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-1.5">
                   Opening Hours
                 </p>
                 {hoursLines.map((line) => (

@@ -1,6 +1,5 @@
 "use client";
-
-import React, { Suspense, useState } from "react";
+import React, { Suspense, useState  } from "react";
 import { useSearchParams } from "next/navigation";
 import AboutCTA from "../about-us/Components/AboutCTA";
 import { cloudinary } from "@/assets/Cloudinary";
@@ -12,12 +11,16 @@ const ShowroomImg = cloudinary.about.hero;
 
 const EquipmentContent = () => {
   const searchParams = useSearchParams();
+  const [search, setSearch] = useState("");
+  const categoryFromUrl = searchParams.get("category") || "All Equipment";
 
-const [search, setSearch] = useState("");
+const [category, setCategory] = useState(categoryFromUrl);
+const [prevCategoryFromUrl, setPrevCategoryFromUrl] = useState(categoryFromUrl);
 
-const [category, setCategory] = useState(
-  searchParams.get("category") || "All Equipment"
-);
+if (categoryFromUrl !== prevCategoryFromUrl) {
+  setPrevCategoryFromUrl(categoryFromUrl);
+  setCategory(categoryFromUrl);
+}
 
   return (
     <div>
@@ -27,6 +30,8 @@ const [category, setCategory] = useState(
         activeCategory={category}
         onCategoryChange={setCategory}
       />
+
+      
 
       <ProjectsShowcase
         search={search}

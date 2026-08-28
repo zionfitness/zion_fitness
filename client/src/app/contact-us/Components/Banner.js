@@ -55,7 +55,7 @@ const Banner = () => {
             className="inline-flex items-center gap-2 border border-[#914D0033] bg-[#914D001A] backdrop-blur-sm rounded-full px-4 py-2 mb-6"
           >
             <span className="w-2 h-2 rounded-full bg-[#F28C28]" />
-            <span className="text-[11px] sm:text-xs font-regular tracking-[0.15em] uppercase text-[#F28C28]">
+            <span className="text-[11px] font-regular tracking-[0.15em] uppercase text-[#F28C28]">
               CONTACT ZION FITNESS Equipment Store
             </span>
           </motion.div>
@@ -92,12 +92,12 @@ const Banner = () => {
               Explore Equipment
               <ArrowRight size={16} />
             </Link>
-            <a
+            <Link
               href="#form"
               className="inline-flex items-center justify-center gap-2 border border-white hover:border-white text-white text-sm font-regular uppercase tracking-wide px-7 py-4 rounded-lg transition-colors duration-200"
             >
               Contact Us
-            </a>
+            </Link>
           </motion.div>
         </div>
       </motion.div>

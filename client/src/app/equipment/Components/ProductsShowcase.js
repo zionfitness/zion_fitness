@@ -75,7 +75,7 @@ const ProductCard = ({ product }) => (
 
       <Link
         href={`/equipment/${product.path}`}
-        className="inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wide text-[#914D00] hover:text-[#F28C28] transition-colors duration-200"
+        className="inline-flex items-center gap-1 text-sm font-semibold uppercase tracking-wide text-[#914D00] hover:text-[#F28C28] transition-colors duration-200"
       >
         View Details
         <ChevronRight size={14} />
@@ -90,7 +90,7 @@ const CategorySection = ({ category, title, products: productList }) => {
   if (categoryProducts.length === 0) return null;
 
   return (
-    <section className="bg-[#FFFFFF] overflow-hidden">
+    <section className="bg-[#FFFFFF] pt-32 overflow-hidden">
       <div className="max-w-[1500px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1220px] 2xl:max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-4 xl:px-10 py-8">
         {/* Section Header */}
         <motion.div

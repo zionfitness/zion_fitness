@@ -9,6 +9,7 @@ import {
   ChevronRight,
   Send,
 } from "lucide-react";
+import Link from "next/link";
 
 const iconMap = {
   ArrowRight,
@@ -86,22 +87,22 @@ const CTASection = ({
             className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 shrink-0"
           >
             {/* Primary Button */}
-            <a
+            <Link
               href={primaryButton.href}
               className="inline-flex items-center justify-center gap-2 bg-[#1A1A1A] hover:bg-black text-white text-sm font-regular uppercase tracking-wide px-6 py-3.5 transition-colors duration-200"
             >
               {primaryButton.text}
               {PrimaryIcon && <PrimaryIcon size={16} />}
-            </a>
+            </Link>
 
             {/* Secondary Button */}
-            <a
+            <Link
               href={secondaryButton.href}
               className="inline-flex items-center justify-center gap-2 border border-white/80 hover:border-white text-white text-sm font-regular uppercase tracking-wide px-6 py-3.5 transition-colors duration-200"
             >
               {secondaryButton.text}
               {SecondaryIcon && <SecondaryIcon size={16} />}
-            </a>
+            </Link>
           </motion.div>
         </div>
       </motion.div>

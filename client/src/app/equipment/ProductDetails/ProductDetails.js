@@ -87,7 +87,7 @@ const ProductDetails = () => {
         <div className="max-w-[1500px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1220px] 2xl:max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-4 xl:px-10 py-10 sm:py-14">
           <Link
             href="/equipment"
-            className="inline-flex items-center gap-2 bg-[#F28C28] p-3 rounded-lg text-xs sm:text-sm font-regular uppercase tracking-wide text-[#FFFFFF] transition-colors duration-200 mb-8 sm:mb-10"
+            className="inline-flex items-center gap-2 bg-[#F28C28] p-3 rounded-lg text-sm font-regular uppercase tracking-wide text-[#FFFFFF] transition-colors duration-200 mb-8 sm:mb-10"
           >
             <ArrowLeft size={16} />
             Back to Products
@@ -152,7 +152,7 @@ const ProductDetails = () => {
             >
               <motion.p
                 variants={fadeUp}
-                className="text-xs sm:text-sm font-regular uppercase tracking-[0.15em] text-[#914D00] mb-3"
+                className="text-sm font-regular uppercase tracking-[0.15em] text-[#914D00] mb-3"
               >
                 {product.category}
               </motion.p>
@@ -181,7 +181,7 @@ const ProductDetails = () => {
                     <div className="w-10 h-10 rounded-full bg-[#F0EDED] flex items-center justify-center shrink-0">
                       <Icon className="text-[#914D00]" size={18} />
                     </div>
-                    <span className="text-xs sm:text-sm font-medium text-[#1B1B1C]">
+                    <span className="text-sm font-medium text-[#1B1B1C]">
                       {label}
                     </span>
                   </div>
@@ -340,7 +340,7 @@ const ProductDetails = () => {
                         : ""
                     }`}
                   >
-                    <p className="text-xs font-regular uppercase tracking-[0.1em] text-[#554336]">
+                    <p className="text-sm font-regular uppercase tracking-[0.1em] text-[#554336]">
                       {label}
                     </p>
                     <p className="text-sm sm:text-base text-[#1B1B1C] font-regular">

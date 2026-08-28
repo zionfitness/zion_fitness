@@ -53,7 +53,7 @@ const TextCell = ({ id, dark }) => {
       }`}
     >
       <p
-        className={`text-xs font-semibold tracking-[0.15em] mb-3 ${
+        className={`text-sm font-semibold tracking-[0.15em] mb-3 ${
           dark ? "text-white" : "text-gray-300"
         }`}
       >
@@ -100,7 +100,7 @@ const Advantage = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center max-w-3xl mx-auto mb-12"
         >
-          <p className="text-xs sm:text-sm font-regular uppercase tracking-[0.15em] text-[#615E5A] mb-3">
+          <p className="text-sm  font-regular uppercase tracking-[0.15em] text-[#615E5A] mb-3">
             The Zion Advantage
           </p>
           <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-[#1A1A1A]">

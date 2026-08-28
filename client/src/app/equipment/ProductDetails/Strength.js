@@ -36,7 +36,7 @@ const Strength = () => {
           >
             <motion.p
               variants={fadeUp}
-              className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-4"
+              className="text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-4"
             >
               INNOVATION
             </motion.p>
@@ -64,7 +64,7 @@ const Strength = () => {
                   <p className="text-lg sm:text-xl font-regular text-[#914D00] mb-1">
                     {value}
                   </p>
-                  <p className="text-xs sm:text-sm text-[#E5E2E1] font-regular leading-relaxed">
+                  <p className="text-sm text-[#E5E2E1] font-regular leading-relaxed">
                     {label}
                   </p>
                 </div>

@@ -15,7 +15,7 @@ import { cloudinary } from "@/assets/Cloudinary";
 const Img = cloudinary.contactUs.form;
 
 const APPS_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbxdGO_CLjM7gQLudj0qjBUij5Y9NC9uooripAmfeDkuVuavYsIMf_SQiwxod0xCp9aJ/exec";
+  "https://script.google.com/macros/s/AKfycbzDtF-WG1aRRfRaG__fMksiXvHUczm32i4jhgOW2D1HKO1gu6RUlCNxyl3G5ZS31vs1oA/exec";
 
 const whyConsult = [
   {
@@ -66,7 +66,7 @@ const inputClasses =
   "w-full bg-[#F0EDED] focus:bg-white text-sm text-[#1A1A1A] placeholder:text-[#9C9791] rounded-lg px-4 py-3.5 outline-none border border-transparent focus:border-[#F28C28] transition-colors duration-200";
 
 const labelClasses =
-  "block text-xs font-semibold uppercase tracking-[0.1em] text-[#554336] mb-2";
+  "block text-sm font-semibold uppercase tracking-[0.1em] text-[#554336] mb-2";
 
 const EMPTY_FORM = {
   fullName: "",
@@ -165,7 +165,7 @@ const Form = ({
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center max-w-2xl mx-auto mb-14"
         >
-          <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-3">
+          <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-3">
             Product Enquiry
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1A1A1A] leading-tight mb-5">
@@ -231,7 +231,7 @@ const Form = ({
                       <p className="text-sm font-regular text-[#1B1B1C] mb-0.5">
                         {title}
                       </p>
-                      <p className="text-xs text-[#554336] font-regular leading-relaxed">
+                      <p className="text-sm text-[#554336] font-regular leading-relaxed">
                         {desc}
                       </p>
                     </div>
@@ -240,7 +240,7 @@ const Form = ({
               </motion.div>
 
               <div className="border-t border-black/10 mt-6 pt-5">
-                <p className="text-xs text-[#554336] italic font-regular leading-relaxed">
+                <p className="text-sm text-[#554336] italic font-regular leading-relaxed">
                   &ldquo;We help you choose the right equipment based on your
                   fitness goals, available space and budget.&rdquo;
                 </p>

@@ -141,7 +141,7 @@ const YourSuite = () => {
                 </h3>
 
                 {/* Product Short Note */}
-                <p className="text-xs sm:text-sm text-[#6B7280] font-regular">
+                <p className="text-sm text-[#6B7280] font-regular">
                   {product.shortNote}
                 </p>
               </Link>

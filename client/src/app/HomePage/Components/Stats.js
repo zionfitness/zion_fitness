@@ -79,7 +79,7 @@ const Stats = () => {
                 {value}
               </p>
 
-              <p className="text-xs sm:text-sm text-[#6B7280] mt-1">{label}</p>
+              <p className="text-sm text-[#6B7280] mt-1">{label}</p>
             </motion.div>
           ))}
         </div>

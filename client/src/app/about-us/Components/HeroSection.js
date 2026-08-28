@@ -49,7 +49,7 @@ const HeroSection = () => {
         <div className="max-w-2xl">
           <motion.p
             variants={itemVariants}
-            className="text-xs sm:text-sm font-regular uppercase tracking-[0.15em] text-[#F28C28] mb-4"
+            className="text-sm font-regular uppercase tracking-[0.15em] text-[#F28C28] mb-4"
           >
             About Zion Fitness
           </motion.p>

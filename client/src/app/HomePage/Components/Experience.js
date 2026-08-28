@@ -31,7 +31,7 @@ const Experience = () => {
           >
             <motion.p
               variants={fadeUp}
-              className="text-xs sm:text-sm font-regular uppercase tracking-[0.15em] text-[#F28C28] mb-3"
+              className="text-sm font-regular uppercase tracking-[0.15em] text-[#F28C28] mb-3"
             >
               The Zion Experience
             </motion.p>

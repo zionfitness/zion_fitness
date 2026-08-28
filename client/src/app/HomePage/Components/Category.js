@@ -63,7 +63,7 @@ const Category = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center max-w-3xl mx-auto mb-12"
         >
-          <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-3">
+          <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-3">
             Shop By Category
           </p>
           <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-[#1A1A1A]">
@@ -106,7 +106,7 @@ const Category = () => {
                 <p className="text-sm text-[#D1D5DB] font-regular leading-relaxed mb-4 max-w-[85%]">
                   {desc}
                 </p>
-                <span className="inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wide text-[#F28C28]">
+                <span className="inline-flex items-center gap-1 text-sm font-semibold uppercase tracking-wide text-[#F28C28]">
                   Explore Category
                   <ChevronRight size={14} />
                 </span>

@@ -183,7 +183,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-[1500px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1220px] 2xl:max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-4 xl:px-10 py-6 text-center">
-          <p className="text-xs text-gray-500">
+          <p className="text-sm text-gray-500">
             © {new Date().getFullYear()} Zion Fitness Equipment. All Rights
             Reserved | Developed by{" "}
             <a

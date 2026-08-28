@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const variantClasses = {
   solid:
@@ -86,7 +87,7 @@ const AboutCTA = ({
             className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4"
           >
             {visibleButtons.map(({ label, href, variant = "solid", icon: Icon }) => (
-              <a
+              <Link
                 key={label}
                 href={href}
                 className={`inline-flex items-center justify-center gap-2 text-sm font-regular uppercase tracking-wide px-7 py-4 rounded-lg transition-colors duration-200 ${
@@ -95,7 +96,7 @@ const AboutCTA = ({
               >
                 {label}
                 {Icon ? <Icon size={16} /> : variant === "solid" ? <ArrowRight size={16} /> : null}
-              </a>
+              </Link>
             ))}
           </motion.div>
         )}

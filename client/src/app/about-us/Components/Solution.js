@@ -48,7 +48,7 @@ const Solution = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="mb-10"
         >
-          <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.15em] text-[#615E5A] mb-3">
+          <p className="text-sm font-medium uppercase tracking-[0.15em] text-[#615E5A] mb-3">
             Curated Range
           </p>
           <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-[#F28C28]">

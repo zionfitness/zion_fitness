@@ -48,7 +48,7 @@ const Popular = () => {
           className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10"
         >
           <div>
-            <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-2">
+            <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-2">
               Featured Equipment
             </p>
 
@@ -107,7 +107,7 @@ const Popular = () => {
 
                   <Link
                     href={`/equipment/${product.path}`}
-                    className="inline-flex items-center gap-1 text-xs font-regular uppercase tracking-wide text-[#1A1A1A] hover:text-[#F28C28] transition-colors duration-200"
+                    className="inline-flex items-center gap-1 text-sm font-regular uppercase tracking-wide text-[#1A1A1A] hover:text-[#F28C28] transition-colors duration-200"
                   >
                     View Details
                     <ChevronRight size={14} />

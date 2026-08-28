@@ -83,7 +83,7 @@ const Guidance = () => {
                 <motion.div key={title} variants={itemVariants}>
                   <div className="flex items-center gap-2 mb-2">
                     <Icon className="text-[#F28C28]" size={18} />
-                    <p className="text-xs font-medium uppercase tracking-[0.15em] text-[#F28C28]">
+                    <p className="text-sm font-medium uppercase tracking-[0.15em] text-[#F28C28]">
                       {title}
                     </p>
                   </div>

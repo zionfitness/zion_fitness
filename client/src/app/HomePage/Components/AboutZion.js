@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "motion/react";
 import {
   CalendarCheck,
@@ -61,7 +62,7 @@ const AboutZion = () => {
           >
             <motion.p
               variants={fadeUp}
-              className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-3"
+              className="text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-3"
             >
               ABOUT ZION FITNESS Equipment Store
             </motion.p>
@@ -73,7 +74,7 @@ const AboutZion = () => {
             </motion.h2>
             <motion.p
               variants={fadeUp}
-              className="text-[#4B5563] text-xs leading-relaxed mb-8 max-w-xl"
+              className="text-[#4B5563] text-sm leading-relaxed mb-8 max-w-xl"
             >
               Zion Fitness Fitness Equipment Store helps individuals, home
               fitness enthusiasts and professional fitness spaces choose the
@@ -98,7 +99,7 @@ const AboutZion = () => {
                     <p className="text-sm sm:text-base font-bold text-[#1A1A1A]">
                       {title}
                     </p>
-                    <p className="text-xs sm:text-sm text-[#6B7280]">
+                    <p className="text-sm text-[#6B7280]">
                       {subtitle}
                     </p>
                   </div>
@@ -106,14 +107,15 @@ const AboutZion = () => {
               ))}
             </div>
 
-            <motion.a
-              variants={fadeUp}
-              href="/about-us"
-              className="inline-flex items-center gap-2 bg-[#1A1A1A] hover:bg-black text-white text-sm font-semibold uppercase tracking-wide px-6 py-3.5 transition-colors duration-200"
-            >
-              Learn More
-              <ArrowRight size={16} />
-            </motion.a>
+<motion.div variants={fadeUp}>
+  <Link
+    href="/about-us"
+    className="inline-flex items-center gap-2 bg-[#1A1A1A] hover:bg-black text-white text-sm font-semibold uppercase tracking-wide px-6 py-3.5 transition-colors duration-200"
+  >
+    Learn More
+    <ArrowRight size={16} />
+  </Link>
+</motion.div>
           </motion.div>
         </div>
       </div>

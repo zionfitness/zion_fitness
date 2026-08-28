@@ -42,14 +42,14 @@ const Versatility = () => {
           className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-10"
         >
           <div>
-            <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] text-[#914D00] mb-3">
+            <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#914D00] mb-3">
               Versatility
             </p>
             <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-[#1A1A1A]">
               Fitness Solutions for Every Space
             </h2>
           </div>
-          <p className="text-xs text-[#554336] font-regular leading-relaxed max-w-md">
+          <p className="text-sm text-[#554336] font-regular leading-relaxed max-w-md">
             From dedicated home workout spaces to commercial fitness
             environments, Zion Fitness Equipment Store offers equipment designed
             to fit different workout goals, spaces and levels of training.

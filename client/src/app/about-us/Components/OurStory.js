@@ -51,7 +51,7 @@ const OurStory = () => {
           >
             <motion.p
               variants={fadeUp}
-              className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-3"
+              className="text-sm font-semibold uppercase tracking-[0.15em] text-[#F28C28] mb-3"
             >
               Our Story
             </motion.p>
