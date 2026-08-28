@@ -15,7 +15,7 @@ import { cloudinary } from "@/assets/Cloudinary";
 const Img = cloudinary.contactUs.form;
 
 const APPS_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbzDtF-WG1aRRfRaG__fMksiXvHUczm32i4jhgOW2D1HKO1gu6RUlCNxyl3G5ZS31vs1oA/exec";
+  "https://script.google.com/macros/s/AKfycbzfKmzvJbidSA1MQ6cQT3fFebZKYiglvVz_EA8Gg8nBZUn8EDA7-iGUsc6k-vSGlr7e/exec";
 
 const whyConsult = [
   {
@@ -151,7 +151,7 @@ const Form = ({
   };
 
   const handleCallNow = () => {
-    window.location.href = "tel:+18009466348";
+    window.location.href = "tel:+919940159616";
   };
 
   return (
