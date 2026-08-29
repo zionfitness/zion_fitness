@@ -15,7 +15,7 @@ import { cloudinary } from "@/assets/Cloudinary";
 const Img = cloudinary.contactUs.form;
 
 const APPS_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbzfKmzvJbidSA1MQ6cQT3fFebZKYiglvVz_EA8Gg8nBZUn8EDA7-iGUsc6k-vSGlr7e/exec";
+  "https://script.google.com/macros/s/AKfycbxGkYc5fMZuNDeBzwRuAlega57mq_VG9FVdYPQEmbhPUUbWoC3OMifOJ30TxWRXJqRM/exec";
 
 const whyConsult = [
   {
