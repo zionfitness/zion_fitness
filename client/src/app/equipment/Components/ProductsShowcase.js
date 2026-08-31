@@ -11,8 +11,8 @@ import { products } from "@/app/data/products";
 // (uppercased) unless a shorter/custom label is set here.
 const categoryTagMap = {
   "Spin Bikes": "SPIN BIKE",
-  "DC Series": "DC SERIES",
-  "AC Series": "AC SERIES",
+  "Treadmill DC Series": "Treadmill DC SERIES",
+  "Treadmill AC Series": "Treadmill AC SERIES",
   "Home Gym": "HOME GYM",
 };
 

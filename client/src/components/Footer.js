@@ -22,8 +22,8 @@ const Footer = () => {
     { label: "Elliptical", category: "Elliptical" },
     { label: "Bikes", category: "Bikes" },
     { label: "Spin Bikes", category: "Spin Bikes" },
-    { label: "DC Series", category: "DC Series" },
-    { label: "AC Series", category: "AC Series" },
+    { label: "Treadmill DC Series", category: "Treadmill DC Series" },
+    { label: "Treadmill AC Series", category: "Treadmill AC Series" },
     { label: "Home Gym", category: "Home Gym" },
   ];
 
