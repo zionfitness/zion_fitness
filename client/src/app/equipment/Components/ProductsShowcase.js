@@ -84,13 +84,20 @@ const ProductCard = ({ product }) => (
   </motion.div>
 );
 
-const CategorySection = ({ category, title, products: productList }) => {
+const CategorySection = ({
+  category,
+  title,
+  products: productList,
+  isFirst,
+}) => {
   const categoryProducts = productList.filter((p) => p.category === category);
 
   if (categoryProducts.length === 0) return null;
 
   return (
-    <section className="bg-[#FFFFFF] pt-32 overflow-hidden">
+    <section
+      className={`bg-[#FFFFFF] ${isFirst ? "pt-32" : "pt-4"} overflow-hidden`}
+    >
       <div className="max-w-[1500px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1220px] 2xl:max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-4 xl:px-10 py-8">
         {/* Section Header */}
         <motion.div
@@ -132,19 +139,12 @@ const CategorySection = ({ category, title, products: productList }) => {
   );
 };
 
-const ProjectsShowcase = ({
-  search = "",
-  category = "All Equipment",
-}) => {
+const ProjectsShowcase = ({ search = "", category = "All Equipment" }) => {
   /*
    * Get all unique categories directly from products.js
    */
   const categories = [
-    ...new Set(
-      products
-        .map((product) => product.category)
-        .filter(Boolean)
-    ),
+    ...new Set(products.map((product) => product.category).filter(Boolean)),
   ];
 
   /*
@@ -152,8 +152,7 @@ const ProjectsShowcase = ({
    */
   const filteredProducts = products.filter((product) => {
     const matchesCategory =
-      category === "All Equipment" ||
-      product.category === category;
+      category === "All Equipment" || product.category === category;
 
     const q = search.trim().toLowerCase();
 
@@ -182,17 +181,16 @@ const ProjectsShowcase = ({
   const visibleSections =
     category === "All Equipment"
       ? sections
-      : sections.filter(
-          (section) => section.category === category
-        );
+      : sections.filter((section) => section.category === category);
 
   return (
     <>
-      {visibleSections.map((section) => (
+      {visibleSections.map((section, index) => (
         <CategorySection
           key={section.category}
           {...section}
           products={filteredProducts}
+          isFirst={index === 0}
         />
       ))}
     </>
